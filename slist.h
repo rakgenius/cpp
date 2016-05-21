@@ -1,3 +1,4 @@
+// header file containing the class definition for single linked list
 #ifndef INT_LINKED_LIST
 #define INT_LINKED_LIST
 
