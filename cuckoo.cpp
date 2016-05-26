@@ -53,7 +53,6 @@ void cuckoo_hashTable::insert(int key, int tableId, int count, int max)
     //for (int i = 0; i<TABLE; i++) {
         pos[tableId] = hash(tableId, key);
         if (key == hashTable[tableId][pos[tableId]]) {
-            cout << "Key already exists\n";
             return;
         }
     //}
@@ -88,7 +87,6 @@ int main()
 
     hash->initTable();
 
-    hash->displayTable();
     for( int i =0; i<10; i++) {
         hash->insert(array[i], 0, 1, SIZE);
     }
